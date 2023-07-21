@@ -25,4 +25,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: cruizba/ubuntu-dind:${{ github.ref_name }},mrjami99/ubuntu-dind:latest
+          tags: Mr-Jami/ubuntu-dind:${{ github.ref_name }},mrjami99/ubuntu-dind:latest
