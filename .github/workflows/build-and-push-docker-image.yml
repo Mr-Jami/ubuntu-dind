@@ -17,7 +17,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: cruizba
+          username: mrjami99
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
@@ -25,4 +25,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: cruizba/ubuntu-dind:${{ github.ref_name }},cruizba/ubuntu-dind:latest
+          tags: cruizba/ubuntu-dind:${{ github.ref_name }},mrjami99/ubuntu-dind:latest
